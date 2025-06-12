@@ -10,31 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 拉取源码
+      # 1. 拉取源码和主题子模块
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4 # Use a more recent version
         with:
+          submodules: recursive # Use 'recursive' to fetch submodules of submodules if any
           fetch-depth: 0
 
-      # 2. 手动克隆 PaperMod 主题到 themes/PaperMod
-      - name: Clone PaperMod theme
-        run: |
-          rm -rf themes/PaperMod
-          git clone https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
-
-      # 3. 安装 Hugo
+      # 2. 安装 Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.147.8'
+          hugo-version: 'latest' # Use 'latest' or a specific recent version
 
-      # 4. 构建站点
+      # 3. 构建站点
       - name: Build
         run: hugo --minify
 
-      # 5. 部署到 gh-pages
+      # 4. 部署到 gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          # Optional: Add a commit message
+          commit_message: "Deploying to gh-pages from @ ${sha}"
