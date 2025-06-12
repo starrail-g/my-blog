@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/my-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=my-blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>深度学习 | LLM Research</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/my-blog/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+<link crossorigin="anonymous" href="/my-blog/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/my-blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/my-blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/my-blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/my-blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/my-blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/my-blog/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/my-blog/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/my-blog/" accesskey="h" title="LLM Research (Alt + H)">LLM Research</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    深度学习
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">16 周深度学习与机器学习全栈学习计划
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>📅 16 周学习总览 下面是为期 16 周的学习计划，每周聚焦一个核心主题，配合理论和实战任务，并给出主要参考资料及链接。
+周次 重点主题 任务 所需资料 / 链接 第 1 周 线性代数基础 - 每日 1.5 h：观看 MIT OCW 线性代数 1–2 章视频- 实战：用 NumPy 实现矩阵加法、乘法 - Strang 线性代数 Lecture 1–2 (MIT OCW)\n- NumPy 官方教程：数组运算 第 2 周 线性代数进阶 - 每日 1.5 h：SVD 与特征分解概念学习- 实战：用 NumPy 实现 SVD，验证奇异值分解重构效果 - Strang 教材第 4 章（SVD）- 《深度学习》（Goodfellow）第 2 章 第 3 周 概率论与统计 - 每日 1.5 h：高斯分布、伯努利分布、期望与方差- 练习：计算不同分布下的概率密度与样本生成 - Stanford CS109 Lecture Notes- Khan Academy 概率论模块 第 4 周 优化算法入门 - 学习梯度下降、学习率、收敛速度- 实战：用纯 Python 实现梯度下降求解线性回归 - 《深度学习》Adam / SGD 章节- Andrew Ng 机器学习 Week 1–2 编程作业（Octave 模板） 第 5 周 监督学习核心—回归与分类 - 观看 Andrew Ng ML Week 2–3（线性回归）- 编程：Octave 实现多变量线性回归 - Coursera Andrew Ng ML Course- Octave / MATLAB 安装与入门 第 6 周 监督学习核心—逻辑回归与正则化 - 观看 Andrew Ng ML Week 4–5- 编程：实现逻辑回归 &#43; L2 正则化 - Andrew Ng ML 作业模板- 《Pattern Recognition and Machine Learning》（Bishop）相关章节 第 7 周 经典模型扩展—SVM 与核方法 - 学习 SVM 原理与核技巧- 练习：用 scikit-learn 训练不同核函数的 SVM，比较效果 - Coursera ML Week 8 视频- scikit-learn 文档（SVC、核函数） 第 8 周 无监督学习—聚类与降维 - 复习 PCA 原理并用 sklearn 实现- 学习 k-means，实战：在 MNIST 子集上做聚类 - Andrew Ng ML Week 9–10- scikit-learn 聚类与 PCA 教程 第 9 周 深度学习入门—神经网络基础 - 学习前向/反向传播算法- 编程：用纯 Python 实现一个两层神经网络 - Coursera Deep Learning Specialization: Course 1 Week 1–2- 《神经网络与深度学习》（邱锡鹏）第 1 章 第 10 周 深度学习框架实战—PyTorch 基础 - 环境搭建：安装 PyTorch- 实战：用 PyTorch 实现 MNIST 数据集分类 - 官方 PyTorch 入门教程- MNIST 数据集简介与加载文档 第 11 周 卷积神经网络—理论与实践 - 学习卷积原理、池化、常见架构- 实战：在 CIFAR-10 上复现一个简单的 CNN - CS231n Lecture 7–9 PPT- PyTorch CNN 示例代码 第 12 周 RNN 与注意力机制 - 学习 RNN/LSTM 基本原理- 编程：用 PyTorch 实现字符级语言模型（简单 RNN） - 《深度学习》（Goodfellow）RNN 章节- PyTorch 官方 RNN 示例 第 13 周 Transformer 原理 - 阅读 “Attention Is All You Need” 论文- 笔记：画出模型架构图 - arXiv:1706.03762- Jay Alammar “The Illustrated Transformer” 博文 第 14 周 Transformer 实现 - 实战：参照 Hugging Face 教程，用 PyTorch Lightning 实现简化版 Transformer 编码器 - Hugging Face “Tutorial: Build a Transformer from scratch”- PyTorch Lightning 文档 第 15 周 预训练模型与微调—BERT - 学习 BERT 预训练目标（MLM）、架构差异- 实战：用 Hugging Face Transformers 微调 BERT - Devlin et al. “BERT: Pre-training of Deep Bidirectional Transformers”- 🤗 Transformers 文档 第 16 周 自回归模型—GPT 与文本生成 - 学习 GPT 系列架构与自回归目标- 实战：用 Transformers API 生成文本并调整温度、Top-k、Top-p - Radford et al. GPT-2 论文- 🤗 Transformers “Text Generation” 示例 备注：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-12 00:00:00 +0000 UTC'>June 12, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to 16 周深度学习与机器学习全栈学习计划" href="http://localhost:1313/my-blog/posts/hello-world/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/my-blog/">LLM Research</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+baseURL = 'https://yourname.github.io/my-blog/'
+languageCode = 'zh-cn'
+title = 'LLM Research'
+theme= "PaperMod"
